@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h3>Agenda</h3>
+    <!-- Criação de Tabela customizada pelo Bootstrap -->
+  <table class="table table-striped" >
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Ru</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Data Nascimento</th>
+      </tr>
+    </thead>
+    <tbody >
+      <!-- estrutura de repetição Angular -->
+      <tr *ngFor="let dado of lista">
+          <!-- Apresentação das variáveis -->
+        <td scope="row">{{dado.nome}}</td>
+        <td scope="row">{{dado.ru}}</td>
+        <td scope="row">{{dado.curso}}</td>
+        <td scope="row">{{dado.data_nascimento}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+<router-outlet></router-outlet>

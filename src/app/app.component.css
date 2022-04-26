@@ -1,0 +1,15 @@
+/*Estilos aplicados nas tags */
+    body{
+    padding:30px;
+    }
+    h1{
+    padding-inline:10px;
+    }
+    /*Classes do Bootstrap que mudei o estilo a meu gosto*/
+    .table>thead>tr>th {
+        vertical-align: bottom;
+        border-bottom: 2px solid black;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: #ECECEC;
+    }
